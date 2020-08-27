@@ -9,7 +9,7 @@ public class King extends Сharacter implements Speaking {
         super(name, level, health, damage, defence);
     }
 //test
-
+//test 2
     public void attack() {
         //нет атаки
     }
