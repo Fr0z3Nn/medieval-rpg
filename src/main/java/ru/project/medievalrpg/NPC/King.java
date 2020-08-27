@@ -8,7 +8,7 @@ public class King extends Сharacter implements Speaking {
     public King(String name, int level, int health, int damage, int defence) {
         super(name, level, health, damage, defence);
     }
-
+//test
     public void attack() {
         //нет атаки
     }
