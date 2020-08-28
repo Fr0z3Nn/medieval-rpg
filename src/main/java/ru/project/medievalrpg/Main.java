@@ -1,15 +1,22 @@
 package ru.project.medievalrpg;
 
 import ru.project.medievalrpg.NPC.King;
+import ru.project.medievalrpg.enemies.Rat;
+import ru.project.medievalrpg.exceptions.NullValueException;
 import ru.project.medievalrpg.mainCharacter.MainHero;
 import java.util.Scanner;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NullValueException {
         MainHero mainHero = new MainHero(startHistory(), 1, 100, 5, 5);
         continueStart(mainHero.getName());
+        Rat rat = new Rat(1,20,5,5);
+        if(rat.fight(mainHero,rat)){
+            System.out.printf("%s за победу над %s вы получаете только нагоняй. А нефиг мучать животных", mainHero.getName(),rat.getRatName());
+        }
+
 
     }
 
