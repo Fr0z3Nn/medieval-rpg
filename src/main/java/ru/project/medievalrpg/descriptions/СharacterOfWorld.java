@@ -2,7 +2,7 @@ package ru.project.medievalrpg.descriptions;
 
 import ru.project.medievalrpg.exceptions.NullValueException;
 
-public abstract class СharacterOfWorld implements DamageRandom {
+public abstract class СharacterOfWorld  {
     private String name;
     private int level;
     private int health;
