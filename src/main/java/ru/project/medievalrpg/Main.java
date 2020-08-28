@@ -13,10 +13,7 @@ public class Main {
     public static void main(String[] args) throws NullValueException {
         MainHero mainHero = new MainHero(startHistory(), 1, 100, 5, 5);
         continueStart(mainHero.getName());
-        Rat rat = new Rat(1,20,5,5);
-        if(rat.fight(mainHero,rat)){
-            System.out.printf("%s за победу над %s вы получаете только нагоняй. А нефиг мучать животных", mainHero.getName(),rat.getRatName());
-        }
+
 
 
     }
