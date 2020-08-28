@@ -16,7 +16,6 @@ public class StartTheGameController {
     @FXML
     public void initialize(){
         startGame.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            @Override
             public void handle(MouseEvent mouseEvent) {
                 startGame.setText("Thanks!");
             }
