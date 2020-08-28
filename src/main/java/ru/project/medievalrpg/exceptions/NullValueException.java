@@ -5,4 +5,5 @@ public class NullValueException extends Exception{
     public void printStackTrace() {
         System.err.println("Показатель меньше 0");
     }
+
 }
