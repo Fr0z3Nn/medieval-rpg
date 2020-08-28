@@ -22,8 +22,6 @@ public abstract class СharacterOfWorld implements DamageRandom {
         this.name = name;
     }
 
-    public abstract void attack();
-
     public int getAttack() throws NullValueException {
         if (this.damageBase <= 0) {
             throw new NullValueException();
@@ -46,7 +44,4 @@ public abstract class СharacterOfWorld implements DamageRandom {
         return name;
     }
 
-    public void setDamageBase(int damageBase) {
-        this.damageBase = damageBase;
-    }
 }

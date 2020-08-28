@@ -2,8 +2,6 @@ package ru.project.medievalrpg;
 
 import ru.project.medievalrpg.NPC.King;
 import ru.project.medievalrpg.mainCharacter.MainHero;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -39,7 +37,7 @@ public class Main {
             return resultUserName;
         }
         return "Карасик"; // так задумано
-        //TODO проверка на имя
+
     }
 
     static String startHistory() {
@@ -76,7 +74,5 @@ public class Main {
                 "\nКонечно, нынешний набор в армию. Военком не имел лучшего креативщика,но так как забирали всех" +
                 "\nЯ вообще не видел смысла в трате бумаги." +
                 "\nНо тут внезапно в комнату забежал крыс!", heroName);
-
-
     }
 }

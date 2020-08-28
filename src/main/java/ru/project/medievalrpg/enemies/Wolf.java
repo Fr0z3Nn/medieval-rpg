@@ -8,7 +8,5 @@ public class Wolf extends СharacterOfWorld {
         super(name, level, health, damage, defence);
     }
 
-    public void attack() {
-
-    }
+    
 }

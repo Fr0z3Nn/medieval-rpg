@@ -1,14 +1,18 @@
 package ru.project.medievalrpg.enemies;
 
+import ru.project.medievalrpg.dataBase.DataBaseOfNamesAdd;
 import ru.project.medievalrpg.descriptions.СharacterOfWorld;
+import ru.project.medievalrpg.mainCharacter.MainHero;
 
 public class Rat extends СharacterOfWorld {
-
-    public Rat(String name, int level, int health, int damage, int defence) {
-        super(name, level, health, damage, defence);
+   final private String RatName = "Крыс " + DataBaseOfNamesAdd.жалкий;
+    public Rat(int level, int health, int damage, int defence) {
+        super(level, health, damage, defence);
     }
 
-    public void attack() {
-
+    public String getRatName() {
+        return RatName;
     }
+
+
 }

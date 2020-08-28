@@ -1,6 +1,5 @@
 package ru.project.medievalrpg.NPC;
 
-import ru.project.medievalrpg.actions.Speaking;
 import ru.project.medievalrpg.descriptions.СharacterOfWorld;
 
 public class King extends СharacterOfWorld implements Speaking {
