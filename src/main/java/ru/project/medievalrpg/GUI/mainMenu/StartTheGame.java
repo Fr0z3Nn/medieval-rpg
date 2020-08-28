@@ -7,18 +7,19 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 
 public class StartTheGame extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
-
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("startMenu.fxml"));
-        primaryStage.setTitle("Medieval RPG");
-        primaryStage.setScene(new Scene(root,600,400));
+        Parent root = FXMLLoader.load(getClass().getResource("/startMenu.fxml"));
+        primaryStage.setTitle("RPG");
+        primaryStage.setScene(new Scene(root,600,333));
         primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }
