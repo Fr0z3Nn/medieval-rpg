@@ -7,13 +7,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.URL;
 
 public class StartTheGame extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/startMenu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/gui/startMenu.fxml"));
         primaryStage.setTitle("RPG");
         primaryStage.setScene(new Scene(root,600,333));
         primaryStage.show();
