@@ -17,13 +17,7 @@ public class aboutUsController {
     public void initialize(){
         back.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             public void handle(MouseEvent mouseEvent) {
-                Parent root = null;
-                try {
-                    root = FXMLLoader.load(getClass().getResource("/gui/startMenu.fxml"));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                StartTheGame.primaryStage.setScene(new Scene(root,600,333));
+                StartTheGame.setNewScene("/gui/startMenu.fxml");
             }
         });
 
