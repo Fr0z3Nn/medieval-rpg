@@ -26,5 +26,10 @@
             <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Text>
+      <Text fx:id="textForOutput" fill="WHITE" layoutX="40.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="522.87890625">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

@@ -3,7 +3,7 @@ package ru.project.medievalrpg.NPC;
 import ru.project.medievalrpg.descriptions.СharacterOfWorld;
 
 public class King extends СharacterOfWorld{
-    static private String kingName = "НеЗабудьПоменятьКоролюИмя"; // Let be one King of the World!
+    static private String kingName = "Артур"; // Let be one King of the World!
 
 
     public static String getKingName() { //Это костыль

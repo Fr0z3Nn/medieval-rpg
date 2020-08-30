@@ -7,6 +7,4 @@ public class MainHero extends СharacterOfWorld {
     public MainHero(String name, int level, int health, int damage, int defence) {
         super(name, level, health, damage, defence);
     }
-
-
 }

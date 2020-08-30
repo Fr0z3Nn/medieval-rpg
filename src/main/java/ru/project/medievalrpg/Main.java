@@ -1,5 +1,6 @@
 package ru.project.medievalrpg;
 
+import ru.project.medievalrpg.NPC.King;
 import ru.project.medievalrpg.actions.Attack;
 import ru.project.medievalrpg.dataBase.Talk;
 import ru.project.medievalrpg.enemies.Rat;
@@ -8,7 +9,8 @@ import ru.project.medievalrpg.mainCharacter.MainHero;
 
 
 public class Main extends Attack {
-
+    // для общего доступа все переменные такого типа будут храниться тут
+    public static MainHero mainHero;
 
     public static void main(String[] args) throws NullValueException {
         MainHero mainHero = new MainHero(Talk.startHistory(), 1, 100, 5, 5);
