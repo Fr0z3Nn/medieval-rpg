@@ -19,7 +19,7 @@
             <Image url="@../img/king.png" />
          </image>
       </ImageView>
-      <TextArea layoutX="4.0" layoutY="54.0" prefHeight="100.0" prefWidth="484.0" text="Мое имя, король ИМЯКОРОЛЯ Я король этих великих и прекрасных земель.&#10;Герой! Нашим землям нужен именно ты, не можешь ли ты?...&#10;Такие слова всегда хочешь услышать в начале приключения.&#10; Но, вы не благородный герой.&#10;И давайте начнем ВАШУ историю с самого начала...">
+      <TextArea fx:id="kingText" editable="false" layoutX="4.0" layoutY="54.0" prefHeight="100.0" prefWidth="484.0" >
          <font>
             <Font name="Comic Sans MS Bold" size="12.0" />
          </font>

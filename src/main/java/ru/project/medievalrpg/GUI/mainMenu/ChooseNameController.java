@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import ru.project.medievalrpg.Main;
+import ru.project.medievalrpg.NPC.King;
 import ru.project.medievalrpg.mainCharacter.MainHero;
 
 import java.io.IOException;
@@ -29,6 +30,7 @@ public class ChooseNameController {
             @Override
             public void handle(MouseEvent mouseEvent) {
                 if(!heroName.getText().equals("")){
+                    registerCharacter();
                     correctNameInput();
                 }else{
                     textForOutput.setText("Имя не должно быть пустым");
@@ -37,8 +39,11 @@ public class ChooseNameController {
         });
     }
 
-    private void correctNameInput() {
+    private void registerCharacter(){
         Main.mainHero = new MainHero(heroName.getText(), 1, 100, 5, 5);
+    }
+
+    private void correctNameInput() {
         Parent root = null;
         try {
             root = FXMLLoader.load(getClass().getResource("/gui/successfulRegistration.fxml"));

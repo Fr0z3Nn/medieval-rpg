@@ -1,5 +1,6 @@
 package ru.project.medievalrpg;
 
+import ru.project.medievalrpg.NPC.King;
 import ru.project.medievalrpg.actions.Attack;
 import ru.project.medievalrpg.dataBase.Talk;
 import ru.project.medievalrpg.enemies.Rat;
