@@ -7,6 +7,9 @@ public abstract class СharacterOfWorld  {
     private int level;
     private int health;
 
+    protected СharacterOfWorld() {
+    }
+
     public int getHealth() {
         return health;
     }

@@ -1,8 +1,10 @@
 package ru.project.medievalrpg.dataBase;
-//придумать или передать класс на случайные имена диапазона
-public enum DataBaseOfNamesAdd {
-    жалкий,
-    крутой,
-    изгибиоционист;
-}
 
+public class DataBaseOfNamesAdd {
+    private static String[] namesAdds =
+            {"Мурыжный", "Классный", "Крутой"};
+
+    public static String getNamesAdds() {
+        return namesAdds[(int) (Math.random() * namesAdds.length)];
+    }
+}
