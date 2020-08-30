@@ -14,16 +14,16 @@
             <Image url="@../img/mainMenu.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="100.0" fitWidth="72.0" layoutX="488.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="100.0" fitWidth="72.0" layoutX="514.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/king.png" />
          </image>
       </ImageView>
-      <TextArea fx:id="kingText" editable="false" layoutX="4.0" layoutY="54.0" prefHeight="100.0" prefWidth="484.0" >
+      <TextArea fx:id="kingText" editable="false" layoutX="4.0" layoutY="16.0" prefHeight="138.0" prefWidth="588.0">
          <font>
             <Font name="Comic Sans MS Bold" size="12.0" />
          </font>
       </TextArea>
-      <Button fx:id="next" layoutX="383.0" layoutY="156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Продолжить" />
+      <Button fx:id="next" layoutX="409.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Продолжить" />
    </children>
 </AnchorPane>

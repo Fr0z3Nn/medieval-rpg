@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.project.medievalrpg.GUI.mainMenu.ratCaveController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/сave.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="easyFight" accessibleRole="BUTTON" fitHeight="110.0" fitWidth="182.0" layoutX="143.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/rat.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="normalFight" accessibleRole="BUTTON" fitHeight="110.0" fitWidth="182.0" layoutX="358.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/rat.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hardFight" accessibleRole="BUTTON" fitHeight="110.0" fitWidth="182.0" layoutX="109.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/rat.png" />
+         </image>
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="levelInfo" fill="WHITE" layoutX="90.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="419.13671875">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
