@@ -25,17 +25,17 @@ public class ratCaveController {
     public void initialize(){
         easyFight.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             public void handle(MouseEvent mouseEvent) {
-                levelInfo.setText("Это крыса EASY");
+                StartTheGame.setNewScene("/gui/fightWithRat.fxml");
             }
         });
         normalFight.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             public void handle(MouseEvent mouseEvent) {
-                levelInfo.setText("Это крыса NORMAL");
+                StartTheGame.setNewScene("/gui/fightWithRat.fxml");
             }
         });
         hardFight.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             public void handle(MouseEvent mouseEvent) {
-                levelInfo.setText("Это крыса HARD");
+                StartTheGame.setNewScene("/gui/fightWithRat.fxml");
             }
         });
     }
