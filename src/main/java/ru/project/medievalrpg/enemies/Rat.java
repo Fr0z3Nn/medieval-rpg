@@ -1,8 +1,6 @@
 package ru.project.medievalrpg.enemies;
 
 import ru.project.medievalrpg.dataBase.DataBaseOfNamesAdd;
-import ru.project.medievalrpg.exceptions.NullValueException;
-import ru.project.medievalrpg.mainCharacter.MainHero;
 
 public class Rat extends MainClassEnemy {
     final private String RatName = "Крыс " + DataBaseOfNamesAdd.getNamesAdds();
@@ -11,8 +9,6 @@ public class Rat extends MainClassEnemy {
         super(new Rat().getRatName(), level, health, damage, defence);
     }
 
-
-
     public Rat() {
     }
 
@@ -20,6 +16,4 @@ public class Rat extends MainClassEnemy {
         return RatName;
     }
 //Мне очень стыдно за код ниже: Но я пишу что пока могу;(
-
-
 }

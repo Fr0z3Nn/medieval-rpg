@@ -3,10 +3,7 @@ package ru.project.medievalrpg.dataBase;
 import ru.project.medievalrpg.Main;
 import ru.project.medievalrpg.NPC.King;
 
-import java.util.Scanner;
-
 public class Talk {
-    static Scanner scanner = new Scanner(System.in);
 
     public static String kingGreeting = "Мое имя, король" + King.getKingName() + ". Я король этих великих и прекрасных земель.\n" +
             "Герой! Нашим землям нужен именно ты, не можешь ли ты?...\n" +
@@ -20,15 +17,14 @@ public class Talk {
             "на скамейке. Твои веки медленно открываються. Ты видишь перед собой человека\n" +
             "Ты начинаешь вспомнинать... что под тобою что-то мокрое и что твое имя: \n" + Main.mainHero.getName();
 
-
-   public static void continueStart(String heroName) {
+    public static void continueStart(String heroName) {
         if (heroName.equals("Карасик")) {
             System.out.println("Какое же у меня замечательное имя!");
         } else {
             System.out.printf("Фу, какая гадость - подумал я о своем имени %s", heroName);
         }
         // желательно так и оставить текст ниже
-       System.out.println("\n".repeat(5));
+        System.out.println("\n".repeat(5));
         System.out.printf("\nТакже я вспомнил человека перед собой. Это мой старый знакомый" +
                 "\nКоля_хускар2007 , так его звали. Но, я его звал Сева" +
                 "\nЭто был *придумать описание Гришы*" +
@@ -42,5 +38,4 @@ public class Talk {
                 "\nЯ вообще не видел смысла в трате бумаги." +
                 "\nНо тут внезапно в комнату забежал крыс!", heroName);
     }
-
 }
