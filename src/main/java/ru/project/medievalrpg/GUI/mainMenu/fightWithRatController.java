@@ -18,16 +18,22 @@ public class fightWithRatController {
     @FXML
     public Text ratHP;
     int hl = 100;
+
     @FXML
     public void initialize() {
 
         heroHp.setText(Main.mainHero.getHealth() + "/100");
         ratHP.setText(hl + "/100");
-        attack.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                ratHP.setText((hl -= 10) + "/100");
+
+        attack.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> {
+            ratHP.setText((hl -= 10) + "/100");
+            if (Main.mainHero.getHealth() <= 0) {
+                StartTheGame.setNewScene("/gui/loseFightWithRat.fxml");
+            }
+            if (hl <= 0) {
+                StartTheGame.setNewScene("/gui/winFightWithRat.fxml");
             }
         });
+
     }
 }
