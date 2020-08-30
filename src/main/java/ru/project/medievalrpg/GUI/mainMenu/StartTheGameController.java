@@ -1,23 +1,11 @@
 package ru.project.medievalrpg.GUI.mainMenu;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 
-public class StartTheGameController{
+public class StartTheGameController {
 
     @FXML
     private Button startGame;
@@ -27,21 +15,14 @@ public class StartTheGameController{
     private Button exit;
 
     @FXML
-    public void initialize(){
-        startGame.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent mouseEvent) {
-                StartTheGame.setNewScene("/gui/chooseName.fxml");
-            }
-        });
-        about.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent mouseEvent) {
-               StartTheGame.setNewScene("/gui/aboutUs.fxml");
-            }
-        });
-        exit.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent mouseEvent) {
-                System.exit(0);
-            }
-        });
+    public void initialize() {
+        startGame.addEventHandler(MouseEvent.MOUSE_CLICKED,
+                mouseEvent -> StartTheGame.setNewScene("/gui/chooseName.fxml"));
+
+        about.addEventHandler(MouseEvent.MOUSE_CLICKED,
+                mouseEvent -> StartTheGame.setNewScene("/gui/aboutUs.fxml"));
+
+        exit.addEventHandler(MouseEvent.MOUSE_CLICKED,
+                mouseEvent -> System.exit(0));
     }
 }
