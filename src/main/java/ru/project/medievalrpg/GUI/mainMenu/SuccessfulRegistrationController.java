@@ -35,13 +35,7 @@ public class SuccessfulRegistrationController {
                         break;
 
                     case 1:
-                        Parent root = null;
-                        try {
-                            root = FXMLLoader.load(getClass().getResource("/gui/ratCave.fxml"));
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        StartTheGame.primaryStage.setScene(new Scene(root, 600, 333));
+                        StartTheGame.setNewScene("/gui/ratCave.fxml");
                         break;
                 }
 

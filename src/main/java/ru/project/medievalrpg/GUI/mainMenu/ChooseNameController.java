@@ -44,13 +44,7 @@ public class ChooseNameController {
     }
 
     private void correctNameInput() {
-        Parent root = null;
-        try {
-            root = FXMLLoader.load(getClass().getResource("/gui/successfulRegistration.fxml"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        StartTheGame.primaryStage.setScene(new Scene(root, 600, 333));
+        StartTheGame.setNewScene("/gui/successfulRegistration.fxml");
     }
 }
 //correctInputAndGoNext();

@@ -19,6 +19,15 @@ public class StartTheGame extends Application{
         primaryStage.show();
     }
 
+    public static void setNewScene(String urlScene){
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(StartTheGame.class.getResource(urlScene));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        StartTheGame.primaryStage.setScene(new Scene(root, 600, 333));
+    }
 
     public static void main(String[] args) {
         launch(args);
