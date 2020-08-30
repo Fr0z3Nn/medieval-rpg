@@ -20,37 +20,7 @@ public class Talk {
             "на скамейке. Твои веки медленно открываються. Ты видишь перед собой человека\n" +
             "Ты начинаешь вспомнинать... что под тобою что-то мокрое и что твое имя: \n" + Main.mainHero.getName();
 
-  public  static String startHistory() {
-        //Нужно добавить
-        //Дописать больше текста описания для описания чтоб описать больше описание.Ага.(я не дописываю текст, так как если мы будем переносить его в JavaFx - то лучше я уж там разыграюсь.
-        return mainHeroName();
-    }
-       public static String mainHeroName() {
-            System.out.println("Введите ваше имя:");
-            String resultUserName = "";
-            for (int i = 0; i < 5; i++) { // Делаем проверку не более 5 раз, дабы не зацикливать цикл.
-                char[] tempArray = scanner.next().toCharArray(); // Превращяем строку в массив чаров, чтоб потом проверить каждый чар
-                for (char tempChar : tempArray) {
-                    if (!Character.isLetter(tempChar) || tempArray.length < 4) { //Делаем допущение, что имя не может быть больше 4 знаков.
-                        System.out.println("Извините, вы допустили ошибку. Попробуйте еще раз");
-                        break;
-                    } else {
-                        resultUserName = resultUserName.concat(String.valueOf(tempChar)); //  можно заменить на res+=temp а еще лучше....
-                    }
-                }
-                if(resultUserName.equals(String.valueOf(tempArray))){
-                    break;
-                }
-            }
-            if (resultUserName.length() == 1) {
-                System.out.println("Ваше имя будет снандартно");
-            } else {
-                System.out.printf("Ваше имя: %s\n",resultUserName);
-                return resultUserName;
-            }
-            return "Карасик"; // так задумано
 
-        }
    public static void continueStart(String heroName) {
         if (heroName.equals("Карасик")) {
             System.out.println("Какое же у меня замечательное имя!");
