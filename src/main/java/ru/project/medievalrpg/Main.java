@@ -13,8 +13,6 @@ public class Main extends Attack {
     public static MainHero mainHero;
 
     public static void main(String[] args) throws NullValueException {
-        MainHero mainHero = new MainHero(Talk.startHistory(), 1, 100, 5, 5);
-        Talk.continueStart(mainHero.getName());
         if(Attack.fight(mainHero, new Rat(1,20,5,5))){
             System.out.printf("%s за победу над %s вы получаете только нагоняй. А нефиг мучать животных", mainHero.getName(),new Rat().getRatName());
         }
