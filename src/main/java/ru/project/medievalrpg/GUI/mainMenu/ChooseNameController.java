@@ -28,7 +28,11 @@ public class ChooseNameController {
         createHero.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                correctNameInput();
+                if(!heroName.getText().equals("")){
+                    correctNameInput();
+                }else{
+                    textForOutput.setText("Имя не должно быть пустым");
+                }
             }
         });
     }
