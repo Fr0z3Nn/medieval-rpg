@@ -1,19 +1,12 @@
 package ru.project.medievalrpg.GUI.mainMenu;
 
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import ru.project.medievalrpg.Main;
-import ru.project.medievalrpg.NPC.King;
 import ru.project.medievalrpg.mainCharacter.MainHero;
-
-import java.io.IOException;
 
 public class ChooseNameController {
 
@@ -26,19 +19,16 @@ public class ChooseNameController {
 
     @FXML
     public void initialize() {
-        createHero.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                if(heroName.getText().equals("")){
-                    textForOutput.setText("Имя не должно быть пустым.");
-                }else if(heroName.getText().length() < 3){
-                    textForOutput.setText("Имя не может быть меньше 3х символов.");
-                }else if(heroName.getText().matches("[a-zA-Z0-9_-]{3,15}")){
-                    registerCharacter();
-                    correctNameInput();
-                }else{
-                    textForOutput.setText("Длина 3-15 символов, только a-z A-Z 0-9 _ -");
-                }
+        createHero.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> {
+            if(heroName.getText().equals("")){
+                textForOutput.setText("Имя не должно быть пустым.");
+            }else if(heroName.getText().length() < 3){
+                textForOutput.setText("Имя не может быть меньше 3х символов.");
+            }else if(heroName.getText().matches("[a-zA-Z0-9_-]{3,15}")){
+                registerCharacter();
+                correctNameInput();
+            }else{
+                textForOutput.setText("Длина 3-15 символов, только a-z A-Z 0-9 _ -");
             }
         });
     }

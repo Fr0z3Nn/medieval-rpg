@@ -1,15 +1,9 @@
 package ru.project.medievalrpg.GUI.mainMenu;
 
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
-
-import java.io.IOException;
 
 public class ratCaveController {
     @FXML
@@ -22,21 +16,9 @@ public class ratCaveController {
     public Text levelInfo;
 
     @FXML
-    public void initialize(){
-        easyFight.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent mouseEvent) {
-                StartTheGame.setNewScene("/gui/fightWithRat.fxml");
-            }
-        });
-        normalFight.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent mouseEvent) {
-                StartTheGame.setNewScene("/gui/fightWithRat.fxml");
-            }
-        });
-        hardFight.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent mouseEvent) {
-                StartTheGame.setNewScene("/gui/fightWithRat.fxml");
-            }
-        });
+    public void initialize() {
+        easyFight.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> StartTheGame.setNewScene("/gui/fightWithRat.fxml"));
+        normalFight.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> StartTheGame.setNewScene("/gui/fightWithRat.fxml"));
+        hardFight.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> StartTheGame.setNewScene("/gui/fightWithRat.fxml"));
     }
 }

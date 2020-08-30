@@ -5,9 +5,11 @@ import ru.project.medievalrpg.exceptions.NullValueException;
 import ru.project.medievalrpg.mainCharacter.MainHero;
 
 public class Attack {
-     protected static boolean fight(MainHero hero, MainClassEnemy enemy) throws NullValueException {
+
+    protected static boolean fight(MainHero hero, MainClassEnemy enemy) throws NullValueException {
         int enemyHP = enemy.getHealth();
         int heroHP = hero.getHealth();
+
         while (enemyHP > 0 && heroHP > 0) {
             System.out.printf("\nВы жадно смотрите на %s. Он тоже ничего." +
                     "\nВы атакуете!", enemy.getName());
@@ -25,20 +27,19 @@ public class Attack {
             }
         }
         return enemyHP <= 0;
-
     }
 
-  protected static int attack(int attackerLvL, int attackerAttack, int enemyDef, int enemyHeath) {
+    protected static int attack(int attackerLvL, int attackerAttack, int enemyDef, int enemyHeath) {
         int damage = valueAfterCalculate(attackerAttack, attackerLvL); // прогнозируемый уровень аттаки
         damage = armorReduceAttack(damage, enemyDef);
         return enemyHeath - damage;
     }
 
-    protected static  int valueAfterCalculate(int heroAttack, int LvL) {
+    protected static int valueAfterCalculate(int heroAttack, int LvL) {
         return (int) (Math.random() * (LvL * 0.8)) * 10 + heroAttack;
     }
 
-   protected static int armorReduceAttack(int attack, int defence) {
+    protected static int armorReduceAttack(int attack, int defence) {
         int resault = attack - (attack / defence);
         if (resault <= 0) {
             System.out.println("Твоя атака так слаба!");

@@ -1,8 +1,8 @@
 package ru.project.medievalrpg.NPC;
 
-import ru.project.medievalrpg.descriptions.СharacterOfWorld;
+import ru.project.medievalrpg.descriptions.CharacterOfWorld;
 
-public class King extends СharacterOfWorld{
+public class King extends CharacterOfWorld {
     static private String kingName = "Артур"; // Let be one King of the World!
 
 
