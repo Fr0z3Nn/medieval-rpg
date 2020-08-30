@@ -39,5 +39,10 @@ public class StartTheGameController{
                 StartTheGame.primaryStage.setScene(new Scene(root,600,333));
             }
         });
+        exit.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent mouseEvent) {
+                System.exit(0);
+            }
+        });
     }
 }
