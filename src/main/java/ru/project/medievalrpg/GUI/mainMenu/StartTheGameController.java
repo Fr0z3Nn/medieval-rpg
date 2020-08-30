@@ -39,6 +39,17 @@ public class StartTheGameController{
                 StartTheGame.primaryStage.setScene(new Scene(root,600,333));
             }
         });
+        about.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent mouseEvent) {
+                Parent root = null;
+                try {
+                    root = FXMLLoader.load(getClass().getResource("/gui/aboutUs.fxml"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                StartTheGame.primaryStage.setScene(new Scene(root,600,333));
+            }
+        });
         exit.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             public void handle(MouseEvent mouseEvent) {
                 System.exit(0);
