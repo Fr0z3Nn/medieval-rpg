@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.project.medievalrpg.GUI.mainMenu.ratCaveController">
    <children>
-      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView accessibleRole="BUTTON" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/сave.jpg" />
          </image>
@@ -34,5 +34,10 @@
             <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Text>
+      <ImageView fx:id="back" accessibleRole="BUTTON" fitHeight="54.0" fitWidth="94.0" layoutX="489.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mapBackIcon.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
