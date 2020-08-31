@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.project.medievalrpg.GUI.mainMenu.aboutHeroController">
+   <children>
+      <ImageView accessibleRole="BUTTON" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mainMenu.jpg" />
+         </image>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="281.0" fitWidth="362.0" layoutX="271.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/WHITE.jpg" />
+         </image>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="310.0" fitWidth="281.0" layoutX="14.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/hero.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="271.0" layoutY="44.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="имя" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="name" fill="WHITE" layoutX="271.0" layoutY="67.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="имяпоставить" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="271.0" layoutY="140.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="уровень" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="level" fill="WHITE" layoutX="271.0" layoutY="165.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="урпоставить" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="271.0" layoutY="190.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="здоровье" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="health" fill="WHITE" layoutX="271.0" layoutY="217.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="здоровьепоставить" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="271.0" layoutY="242.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="защита" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="defence" fill="WHITE" layoutX="271.0" layoutY="267.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="защпоставить" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="back" accessibleRole="BUTTON" fitHeight="65.0" fitWidth="64.0" layoutX="506.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/mapBackIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

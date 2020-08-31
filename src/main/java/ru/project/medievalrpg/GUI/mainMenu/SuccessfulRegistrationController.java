@@ -27,7 +27,7 @@ public class SuccessfulRegistrationController {
                     break;
 
                 case 1:
-                    StartTheGame.setNewScene("/gui/ratCave.fxml");
+                    StartTheGame.setNewScene("/gui/map.fxml");
                     break;
             }
         });
