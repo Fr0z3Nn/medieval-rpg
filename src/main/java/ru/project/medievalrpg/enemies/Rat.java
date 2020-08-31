@@ -3,13 +3,15 @@ package ru.project.medievalrpg.enemies;
 import ru.project.medievalrpg.dataBase.DataBaseOfNamesAdd;
 
 public class Rat extends MainClassEnemy {
-    final private String RatName = "Крыс " + DataBaseOfNamesAdd.getNamesAdds();
+    final private String RatName;
 
     public Rat(int level, int health, int damage, int defence) {
-        super(new Rat().getRatName(), level, health, damage, defence);
+        super( level, health, damage, defence);
+        this.RatName = "Крыс " + DataBaseOfNamesAdd.getNamesAdds();
     }
 
     public Rat() {
+        this.RatName = "Крыс " + DataBaseOfNamesAdd.getNamesAdds();
     }
 
     public String getRatName() {
@@ -17,3 +19,4 @@ public class Rat extends MainClassEnemy {
     }
 //Мне очень стыдно за код ниже: Но я пишу что пока могу;(
 }
+
