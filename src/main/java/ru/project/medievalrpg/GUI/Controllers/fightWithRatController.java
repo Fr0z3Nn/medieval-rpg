@@ -1,12 +1,11 @@
-package ru.project.medievalrpg.GUI.mainMenu;
+package ru.project.medievalrpg.GUI.Controllers;
 
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
+import ru.project.medievalrpg.GUI.Start.StartTheGame;
 import ru.project.medievalrpg.Main;
-import ru.project.medievalrpg.enemies.Rat;
 
 public class fightWithRatController {
     @FXML

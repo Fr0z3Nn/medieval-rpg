@@ -1,9 +1,10 @@
-package ru.project.medievalrpg.GUI.mainMenu;
+package ru.project.medievalrpg.GUI.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
+import ru.project.medievalrpg.GUI.Start.StartTheGame;
 
 public class ratCaveController {
     @FXML

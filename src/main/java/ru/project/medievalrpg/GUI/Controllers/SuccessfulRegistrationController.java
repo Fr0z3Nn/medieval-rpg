@@ -1,9 +1,10 @@
-package ru.project.medievalrpg.GUI.mainMenu;
+package ru.project.medievalrpg.GUI.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
+import ru.project.medievalrpg.GUI.Start.StartTheGame;
 import ru.project.medievalrpg.dataBase.Talk;
 
 public class SuccessfulRegistrationController {
