@@ -1,4 +1,4 @@
-package ru.project.medievalrpg.GUI.mainMenu;
+package ru.project.medievalrpg.GUI.Start;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

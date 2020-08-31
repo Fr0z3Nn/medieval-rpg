@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.project.medievalrpg.GUI.mainMenu.aboutUsController">
+<AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.project.medievalrpg.GUI.Controllers.aboutUsController">
    <children>
       <ImageView fitHeight="286.0" fitWidth="208.0" layoutX="6.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
          <image>

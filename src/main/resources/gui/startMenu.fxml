@@ -11,7 +11,7 @@
 
 
 <AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="ru.project.medievalrpg.GUI.mainMenu.StartTheGameController">
+            fx:controller="ru.project.medievalrpg.GUI.Controllers.StartTheGameController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
