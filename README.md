@@ -1,3 +1,4 @@
+![AppVeyor](https://img.shields.io/appveyor/build/Fr0z3Nn/medieval-rpg)
 # medieval-rpg
 🤩a small RPG with a touch of humor🤩    
 **The story of how a little knight tries to survive in an evil world filled with monsters.**   
