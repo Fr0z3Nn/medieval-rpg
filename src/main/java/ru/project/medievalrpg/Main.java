@@ -9,7 +9,9 @@ import ru.project.medievalrpg.mainCharacter.MainHero;
 public class Main extends Attack {
     // для общего доступа все переменные такого типа будут храниться тут
     public static MainHero mainHero;
-    public static Rat rat;
+    public static Rat easyRat;
+    public static Rat normalRat;
+    public static Rat hardRat;
 
     public static void main(String[] args) throws NullValueException {
         if (Attack.fight(mainHero, new Rat(1, 20, 5, 5))) {

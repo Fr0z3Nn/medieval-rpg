@@ -23,7 +23,7 @@
             <Image url="@../img/rat.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="hardFight" accessibleRole="BUTTON" fitHeight="110.0" fitWidth="182.0" layoutX="109.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="hardFight" accessibleRole="BUTTON" fitHeight="110.0" fitWidth="182.0" layoutX="108.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/rat.png" />
          </image>
@@ -39,5 +39,20 @@
             <Image url="@../img/mapBackIcon.png" />
          </image>
       </ImageView>
+      <Text fx:id="easyText" fill="#22ff05" layoutX="69.0" layoutY="178.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" text="EASYRAT" textAlignment="CENTER" wrappingWidth="240.0234375">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="normalText" fill="#faff05" layoutX="284.0" layoutY="211.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" text="NORMALRAT" textAlignment="CENTER" wrappingWidth="240.0234375">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="hardText" fill="#ff0505" layoutX="34.0" layoutY="319.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" text="HARDRAT" textAlignment="CENTER" wrappingWidth="240.0234375">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

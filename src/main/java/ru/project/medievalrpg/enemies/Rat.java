@@ -17,6 +17,7 @@ public class Rat extends MainClassEnemy {
     public String getRatName() {
         return RatName;
     }
+
 //Мне очень стыдно за код ниже: Но я пишу что пока могу;(
 }
 
