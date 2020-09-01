@@ -21,4 +21,4 @@ GUI.Start.StartTheGame
 ## Cave
 ![cave](https://i.ibb.co/tX3mC3Q/image.png "cave")
 ## Fight
-![fight](<https://i.ibb.co/1JcJdrV/image.png "fight")
+![fight](https://i.ibb.co/1JcJdrV/image.png "fight")
