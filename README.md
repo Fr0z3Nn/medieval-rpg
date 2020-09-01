@@ -1,4 +1,3 @@
-[![build](https://github.com/Fr0z3Nn/medieval-rpg/actions?query=workflow%3Abuild)](https://github.com/Fr0z3Nn/medieval-rpg/workflows/build/badge.svg)
 # medieval-rpg
 🤩a small RPG with a touch of humor🤩    
 **The story of how a little knight tries to survive in an evil world filled with monsters.**   
