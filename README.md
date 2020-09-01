@@ -1,6 +1,6 @@
 # medieval-rpg
-🤩a small RPG with a touch of humor🤩
-The story of how a little knight tries to survive in an evil world filled with monsters.    
+🤩a small RPG with a touch of humor🤩    
+**The story of how a little knight tries to survive in an evil world filled with monsters.**   
 ***
 ## Stacks
 - OpenJDK 11
