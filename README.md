@@ -15,4 +15,10 @@ GUI.Start.StartTheGame
 ***
 ### Screenshots    
 ## Start Menu
-![start](https://i.ibb.co/rycWtb5/pg.png "Start menu")
+![start](https://i.ibb.co/rycWtb5/pg.png "start menu")
+## Map
+![map](https://i.ibb.co/DRWxX3b/image.png "map")
+## Cave
+![cave](https://i.ibb.co/tX3mC3Q/image.png "cave")
+## Fight
+![fight](<https://i.ibb.co/1JcJdrV/image.png "fight")
