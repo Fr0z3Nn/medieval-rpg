@@ -1,8 +1,6 @@
-[![Build Status](https://img.shields.io/github/stars/Fr0z3Nn/medieval-rpg.svg)](https://github.com/Fr0z3Nn/medieval-rpg)
+![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/Fr0z3Nn/medieval-rpg?include_prereleases)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Fr0z3Nn/medieval-rpg)
-![GitHub issues](https://img.shields.io/github/issues/Fr0z3Nn/medieval-rpg)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/Fr0z3Nn/medieval-rpg)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Fr0z3Nn/medieval-rpg)
 # medieval-rpg
 🤩a small RPG with a touch of humor🤩    
 **The story of how a little knight tries to survive in an evil world filled with monsters.**   
