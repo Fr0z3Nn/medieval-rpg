@@ -1,6 +1,4 @@
-[![Build Status](https://img.shields.io/github/forks/Fr0z3Nn/medieval-rpg.svg)](https://github.com/Fr0z3Nn/medieval-rpg)
 [![Build Status](https://img.shields.io/github/stars/Fr0z3Nn/medieval-rpg.svg)](https://github.com/Fr0z3Nn/medieval-rpg)
-![GitHub contributors](https://img.shields.io/github/contributors/Fr0z3Nn/medieval-rpg)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Fr0z3Nn/medieval-rpg)
 ![GitHub issues](https://img.shields.io/github/issues/Fr0z3Nn/medieval-rpg)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/Fr0z3Nn/medieval-rpg)
