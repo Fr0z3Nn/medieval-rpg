@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.project.medievalrpg.GUI.Controllers.aboutHeroController">
+<AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.project.medievalrpg.GUI.Controllers.aboutHeroController">
    <children>
       <ImageView accessibleRole="BUTTON" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -23,7 +21,7 @@
             <Image url="@../img/hero.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="271.0" layoutY="44.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="имя" textAlignment="CENTER" wrappingWidth="281.0">
+      <Text fill="WHITE" layoutX="271.0" layoutY="44.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="Имя" textAlignment="CENTER" wrappingWidth="281.0">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font>
@@ -33,17 +31,27 @@
             <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="271.0" layoutY="140.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="уровень" textAlignment="CENTER" wrappingWidth="281.0">
+      <Text fill="WHITE" layoutX="210.0" layoutY="140.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="Уровень" textAlignment="CENTER" wrappingWidth="281.0">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Text>
-      <Text fx:id="level" fill="WHITE" layoutX="271.0" layoutY="165.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="урпоставить" textAlignment="CENTER" wrappingWidth="281.0">
+      <Text fx:id="level" fill="WHITE" layoutX="210.0" layoutY="165.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="урпоставить" textAlignment="CENTER" wrappingWidth="281.0">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="271.0" layoutY="190.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="здоровье" textAlignment="CENTER" wrappingWidth="281.0">
+      <Text fill="WHITE" layoutX="340.0" layoutY="140.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="Опыт" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="exp" fill="WHITE" layoutX="340.0" layoutY="165.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="опытпоставить" textAlignment="CENTER" wrappingWidth="281.0">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="271.0" layoutY="190.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="Здоровье" textAlignment="CENTER" wrappingWidth="281.0">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font>
@@ -53,7 +61,7 @@
             <Font name="Comic Sans MS" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="271.0" layoutY="242.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="защита" textAlignment="CENTER" wrappingWidth="281.0">
+      <Text fill="WHITE" layoutX="271.0" layoutY="242.0" stroke="#111111" strokeType="OUTSIDE" strokeWidth="2.0" text="Защита" textAlignment="CENTER" wrappingWidth="281.0">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font>

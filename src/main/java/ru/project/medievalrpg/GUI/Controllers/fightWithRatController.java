@@ -31,6 +31,8 @@ public class fightWithRatController {
             }
             if (hl <= 0) {
                 StartTheGame.setNewScene("/gui/winFightWithRat.fxml");
+                Main.mainHero.addExpForWin(5);
+                Main.mainHero.levelUp();
             }
         });
 
