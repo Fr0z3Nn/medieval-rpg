@@ -1,7 +1,11 @@
 package ru.project.medievalrpg.enemies;
 
+import lombok.Getter;
+import lombok.Setter;
 import ru.project.medievalrpg.descriptions.CharacterOfWorld;
 
+@Getter
+@Setter
 public class MainClassEnemy extends CharacterOfWorld {
 
     public MainClassEnemy(String name, int level, int health, int damage, int defence) {
