@@ -7,7 +7,6 @@ import ru.project.medievalrpg.GUI.Start.StartTheGame;
 
 
 public class StartTheGameController {
-
     @FXML
     private Button startGame;
     @FXML
@@ -18,7 +17,7 @@ public class StartTheGameController {
     @FXML
     public void initialize() {
         startGame.addEventHandler(MouseEvent.MOUSE_CLICKED,
-                mouseEvent -> StartTheGame.setNewScene("/gui/chooseName.fxml"));
+                mouseEvent -> StartTheGame.setNewScene("/gui/newGameOrNot.fxml"));
 
         about.addEventHandler(MouseEvent.MOUSE_CLICKED,
                 mouseEvent -> StartTheGame.setNewScene("/gui/aboutUs.fxml"));

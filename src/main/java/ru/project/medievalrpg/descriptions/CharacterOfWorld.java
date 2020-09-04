@@ -2,7 +2,9 @@ package ru.project.medievalrpg.descriptions;
 
 import ru.project.medievalrpg.exceptions.NullValueException;
 
-public abstract class CharacterOfWorld {
+import java.io.Serializable;
+
+public abstract class CharacterOfWorld implements Serializable {
     private String name;
     private int level;
     private int maxExp;
