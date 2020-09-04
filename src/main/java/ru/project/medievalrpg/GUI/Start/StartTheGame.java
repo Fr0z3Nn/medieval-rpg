@@ -17,6 +17,7 @@ public class StartTheGame extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/gui/startMenu.fxml"));
         primaryStage.setTitle("RPG");
         primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

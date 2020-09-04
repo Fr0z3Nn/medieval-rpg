@@ -14,6 +14,8 @@ public class aboutHeroController {
     @FXML
     public Text level;
     @FXML
+    public Text exp;
+    @FXML
     public Text health;
     @FXML
     public Text defence;
@@ -23,6 +25,7 @@ public class aboutHeroController {
     public void initialize() {
         name.setText(Main.mainHero.getName());
         level.setText(String.valueOf(Main.mainHero.getLevel()));
+        exp.setText(Main.mainHero.getExp() + "/" + Main.mainHero.getMaxExp());
         health.setText(String.valueOf(Main.mainHero.getHealth()));
         try {
             defence.setText(String.valueOf(Main.mainHero.getDefence()));

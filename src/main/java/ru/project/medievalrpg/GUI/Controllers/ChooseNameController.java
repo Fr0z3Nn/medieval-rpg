@@ -35,7 +35,7 @@ public class ChooseNameController {
     }
 
     private void registerCharacter(){
-        Main.mainHero = new MainHero(heroName.getText(), 1, 100, 5, 5);
+        Main.mainHero = new MainHero(heroName.getText(), 1, 10, 0, 100, 5, 5);
     }
 
     private void correctNameInput() {

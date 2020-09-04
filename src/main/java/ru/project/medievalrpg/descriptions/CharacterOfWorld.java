@@ -5,6 +5,8 @@ import ru.project.medievalrpg.exceptions.NullValueException;
 public abstract class CharacterOfWorld {
     private String name;
     private int level;
+    private int maxExp;
+    private int exp;
     private int health;
 
     protected CharacterOfWorld() {
@@ -25,6 +27,16 @@ public abstract class CharacterOfWorld {
         this.defence = defence;
     }
 
+    public CharacterOfWorld(String name, int level, int maxExp, int exp, int health, int damageBase, int defence) { // конструктор для персонажа
+        this.name = name;
+        this.level = level;
+        this.maxExp = maxExp;
+        this.exp = exp;
+        this.health = health;
+        this.damageBase = damageBase;
+        this.defence = defence;
+    }
+
     public CharacterOfWorld(String name, int level, int health, int damage, int defence) {
         this(level, health, damage, defence);
         this.name = name;
@@ -32,6 +44,26 @@ public abstract class CharacterOfWorld {
 
     public int getLevel() {
         return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public int getMaxExp() {
+        return maxExp;
+    }
+
+    public void setMaxExp(int maxExp) {
+        this.maxExp = maxExp;
+    }
+
+    public int getExp() {
+        return exp;
+    }
+
+    public void setExp(int exp) {
+        this.exp = exp;
     }
 
     public int getDamageBase() {
