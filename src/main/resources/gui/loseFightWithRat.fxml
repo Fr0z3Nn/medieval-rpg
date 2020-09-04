@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.project.medievalrpg.GUI.Controllers.LoseFightWithRatController">
+<AnchorPane prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.project.medievalrpg.GUI.Controllers.LoseFightWithRatController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
