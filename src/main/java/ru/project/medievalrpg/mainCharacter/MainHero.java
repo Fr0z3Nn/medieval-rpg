@@ -11,15 +11,15 @@ public class MainHero extends CharacterOfWorld {
     }
 
     public void levelUp() {
-        if (this.getExp() == this.getMaxExp()) {
-            int addLevel = this.getLevel() + 1;
-            this.setLevel(addLevel);
-            this.setExp(this.getExp() - this.getMaxExp()); // если exp стал больше, чем максимальный, отнимем максимальный.
-            this.setMaxExp(this.getMaxExp() + 10);
+        if (getExp() == getMaxExp()) {
+            int addLevel = getLevel() + 1;
+            setLevel(addLevel);
+            setExp(getExp() - getMaxExp()); // если exp стал больше, чем максимальный, отнимем максимальный.
+            setMaxExp(getMaxExp() + 10);
         }
     }
 
     public void addExpForWin(int exp) {
-        this.setExp(this.getExp() + exp);
+        setExp(getExp() + exp);
     }
 }

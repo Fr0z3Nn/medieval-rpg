@@ -27,11 +27,7 @@ public class aboutHeroController {
         level.setText(String.valueOf(Main.mainHero.getLevel()));
         exp.setText(Main.mainHero.getExp() + "/" + Main.mainHero.getMaxExp());
         health.setText(String.valueOf(Main.mainHero.getHealth()));
-        try {
-            defence.setText(String.valueOf(Main.mainHero.getDefence()));
-        } catch (NullValueException e) {
-            e.printStackTrace();
-        }
+        defence.setText(String.valueOf(Main.mainHero.getDefence()));
         back.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> StartTheGame.setNewScene("/gui/map.fxml"));
     }
 }

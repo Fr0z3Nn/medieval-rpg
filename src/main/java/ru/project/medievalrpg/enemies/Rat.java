@@ -1,7 +1,11 @@
 package ru.project.medievalrpg.enemies;
 
+import lombok.Getter;
+import lombok.Setter;
 import ru.project.medievalrpg.dataBase.DataBaseOfNamesAdd;
 
+@Getter
+@Setter
 public class Rat extends MainClassEnemy {
     final private String RatName;
 
@@ -12,10 +16,6 @@ public class Rat extends MainClassEnemy {
 
     public Rat() {
         this.RatName = "Крыс " + DataBaseOfNamesAdd.getNamesAdds();
-    }
-
-    public String getRatName() {
-        return RatName;
     }
 
 //Мне очень стыдно за код ниже: Но я пишу что пока могу;(

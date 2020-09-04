@@ -1,9 +1,12 @@
 package ru.project.medievalrpg.descriptions;
 
+import lombok.Getter;
+import lombok.Setter;
 import ru.project.medievalrpg.exceptions.NullValueException;
 
 import java.io.Serializable;
-
+@Getter
+@Setter
 public abstract class CharacterOfWorld implements Serializable {
     private String name;
     private int level;
@@ -12,10 +15,6 @@ public abstract class CharacterOfWorld implements Serializable {
     private int health;
 
     protected CharacterOfWorld() {
-    }
-
-    public int getHealth() {
-        return health;
     }
 
     private int damageBase;
@@ -44,53 +43,10 @@ public abstract class CharacterOfWorld implements Serializable {
         this.name = name;
     }
 
-    public int getLevel() {
-        return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
-    public int getMaxExp() {
-        return maxExp;
-    }
-
-    public void setMaxExp(int maxExp) {
-        this.maxExp = maxExp;
-    }
-
-    public int getExp() {
-        return exp;
-    }
-
-    public void setExp(int exp) {
-        this.exp = exp;
-    }
-
-    public int getDamageBase() {
-        return damageBase;
-    }
-
-    public void setHealth(int health) {
-        this.health = health;
-    }
-
     public int getAttack() throws NullValueException {
         if (this.damageBase <= 0) {
             throw new NullValueException();
         }
         return Math.max(this.damageBase, 0);
-    }
-
-    public int getDefence() throws NullValueException {
-        if (this.defence <= 0) {
-            throw new NullValueException();
-        }
-        return Math.max(this.defence, 0);
-    }
-
-    public String getName() {
-        return name;
     }
 }
