@@ -9,6 +9,7 @@
 - OpenJDK 11
 - JavaFX
 - Maven
+- Lombok
 ***
 ## Run the game
 To run your application you must clone this repository to your own PC and run class:
