@@ -1,6 +1,7 @@
 package ru.project.medievalrpg.dataBase;
 
 public class DataBaseOfNamesAdd {
+    private DataBaseOfNamesAdd(){}
     private static String[] namesAdds =
             {"Мурыжный", "Классный", "Крутой"};
 

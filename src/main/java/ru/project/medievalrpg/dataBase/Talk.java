@@ -5,6 +5,8 @@ import ru.project.medievalrpg.NPC.King;
 
 public class Talk {
 
+    private Talk(){}
+
     public static String kingGreeting = "Мое имя, король" + King.getKingName() + ". Я король этих великих и прекрасных земель.\n" +
             "Герой! Нашим землям нужен именно ты, не можешь ли ты?...\n" +
             "Такие слова всегда хочешь услышать в начале приключения.\n" +
