@@ -35,7 +35,15 @@ public class ChooseNameController {
     }
 
     private void registerCharacter(){
-        Main.mainHero = new MainHero(heroName.getText(), 1, 10, 0, 100, 5, 5);
+        Main.mainHero = MainHero.builder()
+                .name(heroName.getText())
+                .level(1)
+                .maxExp(10)
+                .exp(0)
+                .health(100)
+                .damageBase(5)
+                .defence(5)
+                .build();
     }
 
     private void correctNameInput() {
