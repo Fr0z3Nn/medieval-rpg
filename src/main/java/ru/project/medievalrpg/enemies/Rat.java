@@ -1,22 +1,20 @@
 package ru.project.medievalrpg.enemies;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import ru.project.medievalrpg.dataBase.DataBaseOfNamesAdd;
 
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
 public class Rat extends MainClassEnemy {
-    final private String RatName;
+    final private String RatName = "Крыс " + DataBaseOfNamesAdd.getNamesAdds();
+    private int level;
+    private int health;
+    private int damage;
+    private int defence;
 
-    public Rat(int level, int health, int damage, int defence) {
-        super( level, health, damage, defence);
-        this.RatName = "Крыс " + DataBaseOfNamesAdd.getNamesAdds();
-    }
 
-    public Rat() {
-        this.RatName = "Крыс " + DataBaseOfNamesAdd.getNamesAdds();
-    }
 
 //Мне очень стыдно за код ниже: Но я пишу что пока могу;(
 }

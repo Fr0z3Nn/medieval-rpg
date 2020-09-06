@@ -28,9 +28,24 @@ public class ratCaveController {
 
     @FXML
     public void initialize() {
-        Main.easyRat = new Rat(5,100,5,5);
-        Main.normalRat = new Rat(10,100,5,5);
-        Main.hardRat = new Rat(15,100,5,5);
+        Main.easyRat = Rat.builder()
+                .defence(5)
+                .health(100)
+                .damage(5)
+                .level(5)
+                .build();
+        Main.normalRat = Rat.builder()
+                .defence(5)
+                .health(100)
+                .damage(5)
+                .level(10)
+                .build();
+        Main.hardRat = Rat.builder()
+                .defence(5)
+                .health(100)
+                .damage(5)
+                .level(15)
+                .build();
         easyText.setText(Main.easyRat.getRatName() + " LVL." + Main.easyRat.getLevel());
         normalText.setText(Main.normalRat.getRatName() + " LVL." + Main.normalRat.getLevel());
         hardText.setText(Main.hardRat.getRatName() + " LVL." + Main.hardRat.getLevel());

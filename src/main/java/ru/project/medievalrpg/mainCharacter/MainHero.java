@@ -1,9 +1,6 @@
 package ru.project.medievalrpg.mainCharacter;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import ru.project.medievalrpg.descriptions.CharacterOfWorld;
 
 import java.io.Serializable;
