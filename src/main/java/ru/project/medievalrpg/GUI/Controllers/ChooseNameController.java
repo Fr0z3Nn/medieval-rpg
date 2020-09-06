@@ -43,6 +43,7 @@ public class ChooseNameController {
                 .health(100)
                 .damageBase(5)
                 .defence(5)
+                .pointsToImproveStats(0)
                 .build();
     }
 

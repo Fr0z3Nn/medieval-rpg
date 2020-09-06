@@ -7,6 +7,7 @@ import ru.project.medievalrpg.dataBase.DataBaseOfNamesAdd;
 @Setter
 @Builder
 @NoArgsConstructor
+@AllArgsConstructor
 public class Rat extends MainClassEnemy {
     final private String RatName = "Крыс " + DataBaseOfNamesAdd.getNamesAdds();
     private int level;

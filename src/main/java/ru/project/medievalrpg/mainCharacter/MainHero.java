@@ -16,6 +16,7 @@ public class MainHero extends CharacterOfWorld {
     private int health;
     private int damageBase;
     private int defence;
+    private int pointsToImproveStats;
 
     public void levelUp() {
         if (getExp() == getMaxExp()) {
@@ -23,6 +24,8 @@ public class MainHero extends CharacterOfWorld {
             setLevel(addLevel);
             setExp(getExp() - getMaxExp()); // если exp стал больше, чем максимальный, отнимем максимальный.
             setMaxExp(getMaxExp() + 10);
+            // даем 3 очка на повышение характеристик
+            pointsToImproveStats += 3;
         }
     }
 
