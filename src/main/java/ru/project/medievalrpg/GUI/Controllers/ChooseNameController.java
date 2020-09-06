@@ -41,7 +41,7 @@ public class ChooseNameController {
                 .maxExp(10)
                 .exp(0)
                 .health(100)
-                .damageBase(5)
+                .damageBase(50)
                 .defence(5)
                 .pointsToImproveStats(0)
                 .build();

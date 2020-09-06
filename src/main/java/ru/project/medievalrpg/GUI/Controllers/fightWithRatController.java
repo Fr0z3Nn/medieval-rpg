@@ -25,7 +25,7 @@ public class fightWithRatController {
         ratHP.setText(hl + "/100");
 
         attack.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> {
-            ratHP.setText((hl -= 10) + "/100");
+            ratHP.setText((hl -= Main.mainHero.getDamageBase()) + "/100");
             if (Main.mainHero.getHealth() <= 0) {
                 StartTheGame.setNewScene("/gui/loseFightWithRat.fxml");
             }
