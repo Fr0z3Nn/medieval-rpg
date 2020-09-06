@@ -1,14 +1,24 @@
 package ru.project.medievalrpg.mainCharacter;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 import ru.project.medievalrpg.descriptions.CharacterOfWorld;
 
 import java.io.Serializable;
 
-
+@Getter
+@Setter
+@Builder
 public class MainHero extends CharacterOfWorld {
-    public MainHero(String name, int level, int maxExp, int exp, int health, int damage, int defence) {
-        super(name, level, maxExp, exp, health, damage, defence);
-    }
+    private String name;
+    private int level;
+    private int maxExp;
+    private int exp;
+    private int health;
+    private int damageBase;
+    private int defence;
 
     public void levelUp() {
         if (getExp() == getMaxExp()) {
